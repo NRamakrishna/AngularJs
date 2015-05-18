@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Numbers</title>
+ 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ </head>
+    <body>
+     <div ng-app="" ng-init="q1=10;c1=2">
+     	<p>Price:{{q1*c1 | currency }}</p>
+        <p>price2: <span ng-bind="q1*c1 | currency"></span></p>    
+     </div>
+    </body>
+</html>

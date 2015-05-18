@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controller methods</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+  <div ng-app="app1" ng-controller="ct1">
+  First Name:<input type="text" ng-model="first"/>
+  Last Name:<input type="text" ng-model="last"/><br>
+  Full Name:{{fullName()}}  	
+  </div>
+  <script type="text/javascript">
+    var app=angular.module('app1',[]);
+    app.controller('ct1',function($scope){
+    	$scope.first="Rama";
+    	$scope.last="Krishna";
+        $scope.fullName = function(){
+          return $scope.first+"  "+$scope.last;
+        }
+    });
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-repeat with Objects</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+ <div ng-app="" ng-init="names=[{name:'Ramakrishna', age:25},{name:'hemakumar',age:23},{name:'Sampath',age:40}]">
+ <ul>
+ 	<li ng-repeat="x in names">
+ 		{{x.name+" "+x.age}}
+ 	</li>
+ </ul>
+ </div>
+</body>
+</html>
