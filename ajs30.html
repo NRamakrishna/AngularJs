@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Api isNumber()</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ </head>
+ <body>
+  <div ng-app="ap1" ng-controller="ct1">
+   {{low}}<br>
+   {{num}}
+  </div>
+  <script type="text/javascript">
+   angular.module('ap1',[]).controller('ct1',function($scope){
+   	$scope.low="Ramakrishna";
+   	$scope.num=angular.isNumber($scope.low);
+   });
+  </script>
+ </body>
+</html>
