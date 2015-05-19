@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>ng-click</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ </head>
+ <body>
+  <div ng-app="ap1" ng-controller="ct1">
+   <button ng-click="count=count+1">Click Me!</button>
+   <p ng-bind="count"></p>
+  </div>
+  <script type="text/javascript">
+   angular.module('ap1',[]).controller('ct1',function($scope){
+    $scope.count=0;
+   });
+  </script>
+ </body>
+</html>
